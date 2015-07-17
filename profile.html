@@ -1,22 +1,63 @@
+<link rel="stylesheet" type="text/css" href="dist/semantic.css">
+<link rel="stylesheet" type="text/css" href="dist/components/grid.css">
+<link rel="stylesheet" type="text/css" href="dist/components/tab.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+<script src="dist/semantic.js"></script><script src="dist/components/tab.js"></script>
 <script id="template" type="x-handlebars-template">
 
+<!-- lista-->
+<ul>
+{{#each info}}
 
-
-
-
-
-{{#each link_list}}
-
-    <div>{{description}}</div>
+    <li>
+    {{description}}
+    </li>
 
 {{/each}}
+</ul>
+
+<div class="ui grid">
+ <div style="margin-top: 25px;" class="one column row" align="center">
+     <div class="column">
+        <img src="http://placehold.it/1300x350">
+     </div>
+ </div>
+</div>
+
+<div class="ui hidden divider"></div>
+<h1 align="center">{{global_title}}</h1>
 
 
 
 
+<div class="ui bottom attached active tab segment" data-tab="first">
+  <img align="left" style="padding-top: 50px; padding-left: 50px; padding-right: 50px; padding-bottom: 50px;" src="http://placehold.it/300x200">
+<p>
+  {{lorem}}
+</p>
+<p>
+  {{lorem}}
+</p>
+<p>
+  {{lorem}}
+</p>
+
+</div>
 
 
+<div class="ui bottom attached active tab segment" data-tab="first">
+  <img align="left" style="padding-top: 50px; padding-left: 50px; padding-right: 50px; padding-bottom: 50px;" src="http://placehold.it/300x200">
+<p>
+  <h2 align="center">{{global_title}}</h2>
+</p>
+<p>
+  {{lorem}}
+</p>
+<p>
+  {{lorem}}
+</p>
 
+</div>
 
 
 
